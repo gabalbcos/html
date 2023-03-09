@@ -1,39 +1,34 @@
-const container = document.querySelector('#container');
+//creating the container selector
+const CONTAINER = document.querySelector('#container');
 
-const content = document.createElement('div');
-content.classList.add('content');
-content.textContent = 'This is the glorious text-content!';
+//Adding new Div
+const DIV2 = document.createElement('div');
+//adding a class atribute
+DIV2.classList.add('content');
+DIV2.textContent = 'String inside the div';
 
-container.appendChild(content);
+//append to container
+CONTAINER.appendChild(DIV2);
 
-const content2 = document.createElement('p');
-content2.classList.add('redColor')
-content2.textContent = `Hey, i\'m red!`
+//CREATE P ELEMENT
+const P_CONTENT = document.createElement('p');
+//adding class atribute to turn it red
+P_CONTENT.classList.add('redColor');
+P_CONTENT.textContent = "I'm a red text!";
 
-container.appendChild(content2);
+//append to container
+CONTAINER.appendChild(P_CONTENT)
 
-const content3 = document.createElement('h3');
-content3.classList.add('blueColor')
-content3.textContent = `Hey, i'm blue!`
+//Create div with h2 element inside
+const DIV3 = document.createElement('div');
+DIV3.classList.add('content');
 
-container.appendChild(content3);
-
-//make new div
-const content4 = document.createElement('div');
-content.classList.add('content4');
-container.appendChild(content4);
-
-const thatH1 = document.createElement('h1');
-thatH1.classList.add('redColor')
-thatH1.textContent = `I'm in the div!`
-
-content4.appendChild(thatH1)
-
-const thatP = document.createElement('p');
-thatP.classList.add('blueColor')
-thatP.textContent = `Me too!`
-
-content4.appendChild(thatP)
+const H3 = document.createElement('h3');
+H3.classList.add('blueColor');
+H3.textContent = "I'm blue and inside a DIV"
+DIV3.appendChild(H3)
 
 
 
+
+CONTAINER.appendChild(DIV3);
