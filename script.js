@@ -1,3 +1,2 @@
-//mudando texto
-
-document.querySelector("#texto").textContent = "Winter is coming";
+const BOTAO = document.querySelector('#calcular');
+BOTAO.addEventListener('click', () => alert("Fui clicado"));
